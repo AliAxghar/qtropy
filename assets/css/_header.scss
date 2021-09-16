@@ -1,0 +1,26 @@
+@import "variables";
+
+header{
+    .header{
+        height: 120px;
+        background: #FFFFFF;
+        position: fixed;
+        top: 0;
+        border-bottom: 2px solid silver;
+        align-items: center;
+        padding: 0 60px;
+        z-index: 1000;
+    }
+    .user-p{
+        height: 31px;
+        width: 31px;
+    }
+    .logout-img{
+        height: 21px;
+        padding-left: 10px;
+    }
+    p{
+        font-size: 18px;
+        font-weight: 600;
+    }
+}

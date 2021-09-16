@@ -1,0 +1,240 @@
+@import "variables";
+
+#content{
+    margin-left:300px;
+    width: 100%;
+    margin-bottom: 30px;
+    .account-page{
+        padding: 3rem;
+        .profile{
+            padding: 10px;
+            .user-image{
+                height: 182px;
+            }
+            .cam{
+                position: absolute;
+                top: 130px;
+                left: 144px;
+                height: 44px;
+            }
+            .form-control{
+                background: #FFFFFF;
+                box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+                border: none;
+                padding: 8px 15px;
+                font-size: 16px;
+                font-weight: 500;
+                width: 100%;
+                &::placeholder{
+                    color: #000;
+                }
+            }
+            .textarea{
+                max-width: 100%;
+            }
+            .upload-account-image{
+                display: none;
+            }
+            .label{
+                font-size: 20px;
+                color: #000000;
+                vertical-align: middle;
+            }
+            .label-check{
+                font-size: 20px;
+                color: #000000;
+                font-weight: 600;
+                vertical-align: middle;
+            }
+            textarea{
+                min-height: 40px;
+            }
+            .input{
+                .eye{
+                    position: absolute;
+                    right: 12px;
+                    top: 11px;
+                    cursor: pointer;
+                    
+                }
+                .show-eye{
+                    img{
+                        height: 21px;
+                        width: 22px;
+                    }
+                }
+                .edit{
+                    position: absolute;
+                    right: 44px;
+                    cursor: pointer;
+                    top: 11px;
+                }
+                .edit-des{
+                    position: absolute;
+                    right: 6px;
+                    top: 8px;
+                    cursor: pointer;
+                }
+            }
+            @media screen and (max-width:1200px) {
+                .account-btns{
+                    padding-left: 0px;
+                }
+            }
+            
+        }
+    }
+    .home-page{
+        padding: 3rem;
+        div:nth-child(1){
+            height: 73vh;
+        }
+        p{
+            font-size: 25px;
+            line-height: 45px;
+            span{
+                color: $logocolor;
+            }
+        }
+    }
+    .user-info-page{
+        padding: 3rem;
+        .placeholder-center::placeholder{
+            vertical-align: middle;
+            font-size: 25px;
+            color: rgb(71, 71, 71);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .profile{
+            padding: 10px;
+            .user-image{
+                height: 182px;
+            }
+            .cam{
+                position: absolute;
+                top: 130px;
+                left: 144px;
+                height: 44px;
+            }
+            .form-control{
+                background: #FFFFFF;
+                box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+                border: none;
+                padding: 8px 15px;
+                font-size: 16px;
+                font-weight: 500;
+                width: 100%;
+            }
+            .textarea{
+                max-width: 100%;
+            }
+            .upload-account-image{
+                display: none;
+            }
+            .label{
+                font-size: 20px;
+                color: #000000;
+                vertical-align: middle;
+            }
+            .label-check{
+                font-size: 20px;
+                color: #000000;
+                font-weight: 600;
+                vertical-align: middle;
+            }
+            textarea{
+                min-height: 40px;
+            }
+            .input{
+                .eye{
+                    position: absolute;
+                    right: 12px;
+                    top: 11px;
+                    cursor: pointer;
+                    
+                }
+                .show-eye{
+                    img{
+                        height: 21px;
+                        width: 22px;
+                    }
+                }
+                .edit{
+                    position: absolute;
+                    right: 44px;
+                    cursor: pointer;
+                    top: 11px;
+                }
+                .edit-des{
+                    position: absolute;
+                    right: 6px;
+                    top: 8px;
+                    cursor: pointer;
+                }
+            }
+            @media screen and (max-width:1200px) {
+                .account-btns{
+                    padding-left: 0px;
+                }
+            }
+            
+        }
+    }
+    .notification-page{
+        padding-top: 3rem;
+        .btnRectangle {
+            cursor: pointer;
+            background: #E69900;
+            color: white;
+            font-size: 18px;
+            font-weight: 500;
+            border: 1px solid #E69900;
+            padding: 2px 20px;
+            border-radius: 20px;
+        }
+        .profile{
+            .form-group{
+                border-right: 3px solid rgb(75, 75, 75);
+                padding: 3px 6px;
+            }
+            div:nth-child(7){
+                border-right: none;
+            }
+        }
+        .label-check{
+            font-size: 21px;
+            color: #000000;
+            font-weight: 600;
+            vertical-align: middle;
+        }
+        .form-group label:before {
+            content:'';
+            -webkit-appearance: none;
+            background-color: transparent;
+            border: 3px solid #000000;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+            padding: 10px;
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+        .form-group input:checked + label:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 7px;
+            left: 9px;
+            width: 5px;
+            height: 12px;
+            border: solid #000000;
+            border-width: 0 3px 4px 0;
+            transform: rotate(45deg);
+        }
+    }
+
+}

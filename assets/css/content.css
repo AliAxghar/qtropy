@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Spectral&display=swap");
+#content {
+  margin-left: 300px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+#content .account-page {
+  padding: 3rem;
+}
+
+#content .account-page .profile {
+  padding: 10px;
+}
+
+#content .account-page .profile .user-image {
+  height: 182px;
+}
+
+#content .account-page .profile .cam {
+  position: absolute;
+  top: 130px;
+  left: 144px;
+  height: 44px;
+}
+
+#content .account-page .profile .form-control {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border: none;
+  padding: 8px 15px;
+  font-size: 16px;
+  font-weight: 500;
+  width: 100%;
+}
+
+#content .account-page .profile .form-control::-webkit-input-placeholder {
+  color: #000;
+}
+
+#content .account-page .profile .form-control:-ms-input-placeholder {
+  color: #000;
+}
+
+#content .account-page .profile .form-control::-ms-input-placeholder {
+  color: #000;
+}
+
+#content .account-page .profile .form-control::placeholder {
+  color: #000;
+}
+
+#content .account-page .profile .textarea {
+  max-width: 100%;
+}
+
+#content .account-page .profile .upload-account-image {
+  display: none;
+}
+
+#content .account-page .profile .label {
+  font-size: 20px;
+  color: #000000;
+  vertical-align: middle;
+}
+
+#content .account-page .profile .label-check {
+  font-size: 20px;
+  color: #000000;
+  font-weight: 600;
+  vertical-align: middle;
+}
+
+#content .account-page .profile textarea {
+  min-height: 40px;
+}
+
+#content .account-page .profile .input .eye {
+  position: absolute;
+  right: 12px;
+  top: 11px;
+  cursor: pointer;
+}
+
+#content .account-page .profile .input .show-eye img {
+  height: 21px;
+  width: 22px;
+}
+
+#content .account-page .profile .input .edit {
+  position: absolute;
+  right: 44px;
+  cursor: pointer;
+  top: 11px;
+}
+
+#content .account-page .profile .input .edit-des {
+  position: absolute;
+  right: 6px;
+  top: 8px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  #content .account-page .profile .account-btns {
+    padding-left: 0px;
+  }
+}
+
+#content .home-page {
+  padding: 3rem;
+}
+
+#content .home-page div:nth-child(1) {
+  height: 73vh;
+}
+
+#content .home-page p {
+  font-size: 25px;
+  line-height: 45px;
+}
+
+#content .home-page p span {
+  color: #E69900;
+}
+
+#content .user-info-page {
+  padding: 3rem;
+}
+
+#content .user-info-page .placeholder-center::-webkit-input-placeholder {
+  vertical-align: middle;
+  font-size: 25px;
+  color: #474747;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#content .user-info-page .placeholder-center:-ms-input-placeholder {
+  vertical-align: middle;
+  font-size: 25px;
+  color: #474747;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#content .user-info-page .placeholder-center::-ms-input-placeholder {
+  vertical-align: middle;
+  font-size: 25px;
+  color: #474747;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#content .user-info-page .placeholder-center::placeholder {
+  vertical-align: middle;
+  font-size: 25px;
+  color: #474747;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#content .user-info-page .profile {
+  padding: 10px;
+}
+
+#content .user-info-page .profile .user-image {
+  height: 182px;
+}
+
+#content .user-info-page .profile .cam {
+  position: absolute;
+  top: 130px;
+  left: 144px;
+  height: 44px;
+}
+
+#content .user-info-page .profile .form-control {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border: none;
+  padding: 8px 15px;
+  font-size: 16px;
+  font-weight: 500;
+  width: 100%;
+}
+
+#content .user-info-page .profile .textarea {
+  max-width: 100%;
+}
+
+#content .user-info-page .profile .upload-account-image {
+  display: none;
+}
+
+#content .user-info-page .profile .label {
+  font-size: 20px;
+  color: #000000;
+  vertical-align: middle;
+}
+
+#content .user-info-page .profile .label-check {
+  font-size: 20px;
+  color: #000000;
+  font-weight: 600;
+  vertical-align: middle;
+}
+
+#content .user-info-page .profile textarea {
+  min-height: 40px;
+}
+
+#content .user-info-page .profile .input .eye {
+  position: absolute;
+  right: 12px;
+  top: 11px;
+  cursor: pointer;
+}
+
+#content .user-info-page .profile .input .show-eye img {
+  height: 21px;
+  width: 22px;
+}
+
+#content .user-info-page .profile .input .edit {
+  position: absolute;
+  right: 44px;
+  cursor: pointer;
+  top: 11px;
+}
+
+#content .user-info-page .profile .input .edit-des {
+  position: absolute;
+  right: 6px;
+  top: 8px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  #content .user-info-page .profile .account-btns {
+    padding-left: 0px;
+  }
+}
+
+#content .notification-page {
+  padding-top: 3rem;
+}
+
+#content .notification-page .btnRectangle {
+  cursor: pointer;
+  background: #E69900;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  border: 1px solid #E69900;
+  padding: 2px 20px;
+  border-radius: 20px;
+}
+
+#content .notification-page .profile .form-group {
+  border-right: 3px solid #4b4b4b;
+  padding: 3px 6px;
+}
+
+#content .notification-page .profile div:nth-child(7) {
+  border-right: none;
+}
+
+#content .notification-page .label-check {
+  font-size: 21px;
+  color: #000000;
+  font-weight: 600;
+  vertical-align: middle;
+}
+
+#content .notification-page .form-group label:before {
+  content: '';
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 3px solid #000000;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+#content .notification-page .form-group input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 7px;
+  left: 9px;
+  width: 5px;
+  height: 12px;
+  border: solid #000000;
+  border-width: 0 3px 4px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+/*# sourceMappingURL=content.css.map */

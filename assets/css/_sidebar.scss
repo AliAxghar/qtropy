@@ -1,0 +1,53 @@
+@import "variables";
+
+#sidebar{
+    width: 300px;
+    height: 100%;
+    background: #ffffff;
+    position: fixed;
+    border-right: 2px solid silver;
+    overflow: hidden;
+    ul {
+        display: flex;
+        margin-top: 40px;
+        flex-direction: column;
+        li {
+            list-style: none;
+            padding: 10px 20px;
+            border: 2px solid #fff;
+            margin: 1px 0;
+            a {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                color: black;
+                img{
+                    height: 21px;
+                    width: 20px;
+                    object-fit: cover;
+                }
+                span {
+                    padding-left: 8px;
+                    font-size: 19px;
+                    line-height: 20.48px;
+                    font-weight: 500;
+                }
+                
+            }
+            .dot{
+                position: absolute;
+                background: #e69900;
+                right: 10px;
+                height: 8px;
+                width: 8px;
+                border-radius: 100%;
+            }
+        }
+        .active {
+            border: 2px solid $logocolor;
+        }
+    }
+}
+
+
+

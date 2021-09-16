@@ -1,0 +1,96 @@
+.modal{
+    .form-control{
+        background: #FFFFFF;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+        border: none;
+        padding: 8px 15px;
+        font-size: 16px;
+        font-weight: 500;
+        width: 100%;
+        height: 35px;
+        &::placeholder{
+            color: #000;
+        }
+    }
+    .modal-check{
+        input[type="checkbox"]{
+            display: none;
+        }
+        label {
+            position: relative;
+            cursor: pointer;
+        }
+        label:before {
+            content:'';
+            -webkit-appearance: none;
+            background-color: transparent;
+            border: 3px solid #000000;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+            padding: 7px;
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+        input[type="checkbox"]:checked + label:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 8px;
+            left: 7px;
+            width: 4px;
+            height: 8px;
+            border: solid #000000;
+            border-width: 0 3px 4px 0;
+            transform: rotate(45deg);
+        }
+    }
+    .modal-radio{
+        input[type="radio"]{
+            display: none;
+        }
+        label {
+            position: relative;
+            cursor: pointer;
+        }
+        label:before {
+            content:'';
+            -webkit-appearance: none;
+            background-color: transparent;
+            border: 2px solid #353535;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+            padding: 8px;
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+            cursor: pointer;
+            margin-right: 5px;
+            border-radius: 50%;
+        }
+        [type="radio"]:checked + label:after,
+        [type="radio"]:not(:checked) + label:after {
+            content: '';
+            width: 16px;
+            height: 16px;
+            background: #e69900;
+            position: absolute;
+            top: 5px;
+            left: 2px;        
+            border-radius: 100%;
+            -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+        }
+        [type="radio"]:not(:checked) + label:after {
+            opacity: 0;
+            -webkit-transform: scale(0);
+            transform: scale(0);
+        }
+        [type="radio"]:checked + label:after {
+            opacity: 1;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+    }
+    
+}
