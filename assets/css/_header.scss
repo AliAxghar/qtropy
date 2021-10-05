@@ -9,7 +9,11 @@ header{
         border-bottom: 2px solid silver;
         align-items: center;
         padding: 0 60px;
-        z-index: 1000;
+        // z-index: 1000;
+        a{
+            text-decoration: none;
+            color: #000;
+        }
     }
     .user-p{
         height: 31px;

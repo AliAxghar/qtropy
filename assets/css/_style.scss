@@ -13,7 +13,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: $fontfamily;
+    font-family: $fontfamily-s;
 }
 .container{
     width: 80%;
@@ -82,6 +82,40 @@
 .w100px{
     width: 100px;
 }
+.bg-black{
+    background: #000000;
+}
+.mr5px{
+    margin-right: 5px;
+}
+.mr10px{
+    margin-right: 10px;
+}
+
+.bg-logo{
+    background: $logocolor;
+}
+.bg-light-logo{
+    background: #efe2c7;
+}
+.btnRectangle:hover{
+    box-shadow: 0px 3px 9px -2px #000000cf;
+}
+.btnRectangle-fix:hover{
+    box-shadow: 0px 3px 9px -2px #000000cf;
+}
+.btnRectangle-fixed:hover{
+    box-shadow: 0px 3px 9px -2px #000000cf;
+}
+.text-logo{
+    color: $logocolor;
+}
+input[type='submit'], img, a{
+    cursor: pointer;
+}
+.text-white{
+    color: #fff;
+}
 .wrap{
     flex-wrap: wrap;
 }
@@ -139,6 +173,21 @@
     margin-bottom: 15px;
 }
 
+.form-control{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border: none;
+    padding: 8px 15px;
+    font-size: 18px;
+    font-weight: 500;
+    width: 100%;
+}
+.d-none{
+    display: none;
+}
+.d-block{
+    display: block;
+}
 .form-group input {
     padding: 0;
     height: initial;
@@ -173,6 +222,35 @@
     .media-none {
         display: none !important;
     }
+    .follower-page {
+        .btnRectangle {
+            cursor: pointer;
+            background: #E69900;
+            color: white;
+            font-size: 12px !important;
+            font-weight: 500;
+            border: 1px solid #E69900;
+            padding: 3px 6px !important;
+        }
+        .user-image{
+            height: 60px!important;
+            width: 50px!important;
+            object-fit: contain;
+        }
+        .user-info{
+            width: 50px!important;
+            text-align: center;
+            background: white;
+            background: #FFFFFF;
+            box-shadow:1px 4px 25px rgba(0, 0, 255, .2);
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            font-size: 10px!important;
+            color: #000;
+            font-weight: 600;
+        }
+    }
+    
 }
 
 .btnRectangle{
@@ -253,6 +331,9 @@ button{
 }
 .border-bottom{
     border-bottom: 2px solid #c0c0c0;
+}
+.border-all{
+    border: 2px solid #c0c0c0;
 }
 .form-group {
     display: block;
@@ -753,7 +834,7 @@ button{
     color: var(--white);
     padding: 0.2rem 1.5rem;
     margin-bottom: 1rem;
-    border-radius: 5px;
+    border-radius: 0px;
 }
   
   

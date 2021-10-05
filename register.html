@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Setting</title>
+    <link rel="icon" href="./assets/images/Q.png" type="image/*">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/content.css">
+    <link href="https://fonts.googleapis.com/css2?family=Spectral&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <div class="full-page-content">
+            <div class="register-page">
+                <div class="text-center"><img src="./assets/images/logo.svg" alt=""></div>
+                <p class="mt-1 p-info">Except for your username, all information you provided can be viewed only by you.
+                    You can use to selectively change this viewing settings once your account is created.</p>
+                <div class="d-flex align-items-center mt10px">
+                    <div class="flex-grow-1 d-flex f-column f-column-wrap">
+                        <form action="" method="POST" id="registerForm" class="registerForm">
+                            <div class="profile d-flex justify-content-center">
+                                <label for="upload-file" class="relative profile-image mt-1">
+                                    <img class="user-image" src="assets/images/image-user1.png" alt="user-image">
+                                    <img class="cam " src="assets/images/cam.svg" alt="">
+                                </label>
+                                <input type="file"  id="upload-file" class="upload-account-image">
+                                <div class="flex-grow-1">
+                                    <div class="d-flex f-column">
+                                        <p class="f18 f-w-500 form-info">Enter your name email and password to get registered with Qtropy</p>
+                                        <div class="d-flex mt10px">
+                                            <input type="text" class="form-control" placeholder="Username">
+                                        </div>
+                                        <div class="d-flex mt-1">
+                                            <input type="email" class="form-control text" id="email" placeholder="Email">
+                                        </div> 
+                                        <div class="d-flex mt-1">
+                                            <input type="email" class="form-control text" id="password" placeholder="Password">
+                                        </div> 
+                                        
+                                        <!-- <div class="text-center mt-3"></div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class=" relative input max-w100">
+                                    <textarea type="email" class="form-control text textarea w100 " rows="5" cols="" placeholder="Profile Description" readonly></textarea>
+                                    <span class="edit-des" onclick="editFunction(this)">
+                                        <img src="assets/images/edit.svg" alt="">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="flex-1"></div>
+                                <div class="flex-5">
+                                    <input type="submit" class="form-control mt-2 submit" value="Register">
+                                </div>
+                                <div class="flex-1"></div>
+                            </div>
+                        </form>
+                        <div class="d-flex mt-1">
+                            <div class="flex-grow-1"></div>
+                            <div class="flex-grow-1 d-flex f-column">
+                                <div class="d-flex">
+                                    <img class="mr5px" src="./assets/images/failed-icon.svg" alt="">
+                                    <p class=" l-color f20 text-center"> Password does not match the requirement.</p>
+                                </div>
+                                <div class="d-flex">
+                                    <img class="mr5px" src="./assets/images/failed-icon.svg" alt="">
+                                    <p class=" l-color f20 text-center"> Username already exists.</p>
+                                </div>
+                                <div class="d-flex">
+                                    <img class="mr5px" src="./assets/images/failed-icon.svg" alt="">
+                                    <p class=" l-color f20 text-center"> Email address already registered.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mt-1 f20 f-w-500 text-center"><a href="register.html">Not a memebr? Register</a> <span>|</span> <a href="forgot-password.html">Forgot password?</a><a href="change-password.html"> Change it</a></p>
+                        <a href="index.html" class="back">Back</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="assets/js/account.js"></script>
+    </body>
+</html>

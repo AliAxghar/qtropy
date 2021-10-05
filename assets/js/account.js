@@ -1,3 +1,4 @@
+
 function hideFunction(elem) {
     var parentElem = elem.parentNode;
     var children = parentElem.childNodes;
