@@ -4,6 +4,7 @@
     margin-left:300px;
     width: 100%;
     margin-bottom: 30px;
+    // z-index: -1;
     .account-page{
         padding: 3rem;
         .profile{
@@ -36,12 +37,12 @@
                 display: none;
             }
             .label{
-                font-size: 20px;
+                font-size: 18px;
                 color: #000000;
                 vertical-align: middle;
             }
             .label-check{
-                font-size: 20px;
+                font-size: 18px;
                 color: #000000;
                 font-weight: 600;
                 vertical-align: middle;
@@ -77,6 +78,33 @@
                     top: 8px;
                     cursor: pointer;
                 }
+            }
+            .form-group label:before {
+                content:'';
+                -webkit-appearance: none;
+                background-color: transparent;
+                border: 5px solid #000000;
+                box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+                padding: 10px;
+                display: inline-block;
+                position: relative;
+                vertical-align: middle;
+                cursor: pointer;
+                margin-right: 5px;
+            }
+            
+            
+            .form-group input:checked + label:after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 7px;
+                left: 7px;
+                width: 10px;
+                height: 10px;
+                background: #E69900;
+                border: solid #E69900;
+                transform: none;
             }
             @media screen and (max-width:1200px) {
                 .account-btns{
@@ -142,7 +170,7 @@
                 display: none;
             }
             .label{
-                font-size: 20px;
+                font-size: 18px;
                 color: #000000;
                 vertical-align: middle;
             }
@@ -197,24 +225,24 @@
         width: 100%;
         .f-btn{
             // padding: 14px 12px;
-            font-size: 24px;
+            font-size: 22px;
             font-weight: 600;
             letter-spacing: 1px;
             font-family: $fontfamily-q;
             cursor: pointer;
-            height: 75px;
+            height: 40px;
         }
         .f-right{
-            border-top-right-radius: 15px;
-            border-bottom-right-radius: 15px;
+            // border-top-right-radius: 15px;
+            // border-bottom-right-radius: 15px;
         }
         .Nselected{
             background: $logolightcolor;
             color: $logocolor;
         }
         .f-left{
-            border-top-left-radius: 15px;
-            border-bottom-left-radius: 15px;
+            // border-top-left-radius: 15px;
+            // border-bottom-left-radius: 15px;
         }
         .selected{
             background: $logocolor;
@@ -257,14 +285,26 @@
         .profile{
             .form-group{
                 border-right: 3px solid rgb(75, 75, 75);
-                padding: 3px 6px;
+                padding: 3px 3px 0px 3px;
             }
             div:nth-child(7){
                 border-right: none;
             }
         }
+        .form-group{
+            span{
+                font-size: 16px;
+            }
+        }
+        @media only screen and (min-width:1370px){
+            .form-group{
+                span{
+                    font-size: 20px;
+                }
+            }
+        }
         .label-check{
-            font-size: 21px;
+            font-size: 16px;
             color: #000000;
             font-weight: 600;
             vertical-align: middle;
@@ -273,9 +313,9 @@
             content:'';
             -webkit-appearance: none;
             background-color: transparent;
-            border: 3px solid #000000;
+            border: 4px solid #000000;
             box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
-            padding: 10px;
+            padding: 8px;
             display: inline-block;
             position: relative;
             vertical-align: middle;
@@ -287,12 +327,12 @@
             display: block;
             position: absolute;
             top: 7px;
-            left: 9px;
-            width: 5px;
-            height: 12px;
-            border: solid #000000;
-            border-width: 0 3px 4px 0;
-            transform: rotate(45deg);
+            left: 6px;
+            width: 6px;
+            background: #e69900;
+            height: 6px;
+            border: solid #e69900;
+            transform: none;
         }
     }
     .question1-page{
@@ -384,10 +424,10 @@
             }
         }
         .flex-right{
-            border-right: 2px solid #c0c0c0;
+            border-right: 2px solid #e1dede;
         }
         .flex-left{
-            border-right: 2px solid #c0c0c0;
+            border-right: 2px solid #e1dede;
         }
         .h-para{
             background: rgba(230, 153, 0, 0.2);
@@ -462,10 +502,10 @@
             }
         }
         .flex-right{
-            border-right: 2px solid #c0c0c0;
+            border-right: 2px solid #e1dede;
         }
         .flex-left{
-            border-right: 2px solid #c0c0c0;
+            border-right: 2px solid #e1dede;
         }
         .h-para{
             background: rgba(230, 153, 0, 0.2);
@@ -540,10 +580,10 @@
             }
         }
         .flex-right{
-            border-right: 2px solid #c0c0c0;
+            border-right: 2px solid #e1dede;
         }
         .flex-left{
-            border-right: 2px solid #c0c0c0;
+            border-right: 2px solid #e1dede;
         }
         .h-para{
             background: rgba(230, 153, 0, 0.2);
@@ -590,7 +630,7 @@
         }
     }
     .answer1-page{
-        padding-top: 3rem;
+        padding-top: 1rem;
         font-family: $fontfamily-q;
         .btnRectangle-fix {
             cursor: pointer;
@@ -1215,7 +1255,7 @@
         }    
     }
     .answer1-page{
-        padding-top: 3rem;
+        padding-top: 1rem;
         font-family: $fontfamily-q;
         .btnRectangle-fix {
             cursor: pointer;
@@ -1239,6 +1279,7 @@
             font-family: $fontfamily-q;
             padding: 5px 20px;
             border-radius: 20px;
+            width: 170px;
         }
         .btnRectangle-fixed{
             font-family: $fontfamily-q;
@@ -1251,7 +1292,7 @@
         }
     }
     .answer2-page{
-        padding-top: 3rem;
+        padding-top: 1rem;
         font-family: $fontfamily-q;
         .btnRectangle-fix {
             cursor: pointer;
@@ -1275,6 +1316,7 @@
             font-family: $fontfamily-q;
             padding: 5px 20px;
             border-radius: 20px;
+            width: 150px;
         }
         .btnRectangle-fixed{
             font-family: $fontfamily-q;
@@ -1423,7 +1465,7 @@
 }
 .full-page-content{
     .login-page{
-        width: 35%;
+        width: 45%;
         left: 50%;
         position: absolute;
         top: 50%;
@@ -1538,7 +1580,7 @@
                 }
             }
             .video-img{
-                height: 350px;
+                height: 320px;
             }
             
         }
@@ -1613,10 +1655,10 @@
             }
         }
         .flex-right{
-            border-right: 2px solid #c0c0c0;
+            border-right: 2px solid #e1dede;
         }
         .flex-left{
-            border-right: 2px solid #c0c0c0;
+            border-right: 2px solid #e1dede;
         }
         .h-para{
             background: rgba(230, 153, 0, 0.2);
@@ -1715,10 +1757,10 @@
             }
         }
         .flex-right{
-            border-right: 2px solid #c0c0c0;
+            border-right: 2px solid #e1dede;
         }
         .flex-left{
-            border-right: 2px solid #c0c0c0;
+            border-right: 2px solid #e1dede;
         }
         .h-para{
             background: rgba(230, 153, 0, 0.2);
@@ -1817,10 +1859,10 @@
             }
         }
         .flex-right{
-            border-right: 2px solid #c0c0c0;
+            border-right: 2px solid #e1dede;
         }
         .flex-left{
-            border-right: 2px solid #c0c0c0;
+            border-right: 2px solid #e1dede;
         }
         .h-para{
             background: rgba(230, 153, 0, 0.2);
@@ -1919,10 +1961,10 @@
             }
         }
         .flex-right{
-            border-right: 2px solid #c0c0c0;
+            border-right: 2px solid #e1dede;
         }
         .flex-left{
-            border-right: 2px solid #c0c0c0;
+            border-right: 2px solid #e1dede;
         }
         .h-para{
             background: rgba(230, 153, 0, 0.2);
@@ -2018,7 +2060,7 @@
         }
     }
     .register-page{
-        width: 45%;
+        width: 60%;
         left: 50%;
         position: absolute;
         top: 50%;

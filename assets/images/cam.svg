@@ -1,10 +1,10 @@
-<svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="59" height="58" viewBox="0 0 59 58" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g filter="url(#filter0_d)">
-<rect x="15" y="15" width="28" height="28" rx="10" fill="white"/>
-<path d="M22.3478 23.2857V21H23.913V23.2857H26.2609V24.8095H23.913V27.0952H22.3478V24.8095H20V23.2857H22.3478ZM24.6957 27.8571V25.5714H27.0435V23.2857H32.5217L33.9539 24.8095H36.4348C37.2957 24.8095 38 25.4952 38 26.3333V35.4762C38 36.3143 37.2957 37 36.4348 37H23.913C23.0522 37 22.3478 36.3143 22.3478 35.4762V27.8571H24.6957ZM30.1739 34.7143C32.3339 34.7143 34.087 33.0076 34.087 30.9048C34.087 28.8019 32.3339 27.0952 30.1739 27.0952C28.0139 27.0952 26.2609 28.8019 26.2609 30.9048C26.2609 33.0076 28.0139 34.7143 30.1739 34.7143ZM27.6696 30.9048C27.6696 32.2533 28.7887 33.3429 30.1739 33.3429C31.5591 33.3429 32.6783 32.2533 32.6783 30.9048C32.6783 29.5562 31.5591 28.4667 30.1739 28.4667C28.7887 28.4667 27.6696 29.5562 27.6696 30.9048Z" fill="black"/>
+<rect x="15" y="15" width="29" height="27.0667" rx="10" fill="white"/>
+<rect x="19" y="18" width="21" height="21" fill="url(#pattern0)"/>
 </g>
 <defs>
-<filter id="filter0_d" x="0" y="0" width="58" height="58" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_d" x="0" y="0" width="59" height="57.0667" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset/>
@@ -13,5 +13,9 @@
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
 </filter>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0" transform="scale(0.01)"/>
+</pattern>
+<image id="image0" width="100" height="100" xlink:href="data:image/png;base64,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"/>
 </defs>
 </svg>

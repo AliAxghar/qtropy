@@ -61,13 +61,13 @@
 }
 
 #content .account-page .profile .label {
-  font-size: 20px;
+  font-size: 18px;
   color: #000000;
   vertical-align: middle;
 }
 
 #content .account-page .profile .label-check {
-  font-size: 20px;
+  font-size: 18px;
   color: #000000;
   font-weight: 600;
   vertical-align: middle;
@@ -103,6 +103,35 @@
   right: 6px;
   top: 8px;
   cursor: pointer;
+}
+
+#content .account-page .profile .form-group label:before {
+  content: '';
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 5px solid #000000;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+#content .account-page .profile .form-group input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  width: 10px;
+  height: 10px;
+  background: #E69900;
+  border: solid #E69900;
+  -webkit-transform: none;
+          transform: none;
 }
 
 @media screen and (max-width: 1200px) {
@@ -215,7 +244,7 @@
 }
 
 #content .user-info-page .profile .label {
-  font-size: 20px;
+  font-size: 18px;
   color: #000000;
   vertical-align: middle;
 }
@@ -271,27 +300,17 @@
 }
 
 #content .follower-page .f-btn {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 600;
   letter-spacing: 1px;
   font-family: "Quicksand", sans-serif;
   cursor: pointer;
-  height: 75px;
-}
-
-#content .follower-page .f-right {
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  height: 40px;
 }
 
 #content .follower-page .Nselected {
   background: #efe2c7;
   color: #E69900;
-}
-
-#content .follower-page .f-left {
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
 }
 
 #content .follower-page .selected {
@@ -342,15 +361,25 @@
 
 #content .notification-page .profile .form-group {
   border-right: 3px solid #4b4b4b;
-  padding: 3px 6px;
+  padding: 3px 3px 0px 3px;
 }
 
 #content .notification-page .profile div:nth-child(7) {
   border-right: none;
 }
 
+#content .notification-page .form-group span {
+  font-size: 16px;
+}
+
+@media only screen and (min-width: 1370px) {
+  #content .notification-page .form-group span {
+    font-size: 20px;
+  }
+}
+
 #content .notification-page .label-check {
-  font-size: 21px;
+  font-size: 16px;
   color: #000000;
   font-weight: 600;
   vertical-align: middle;
@@ -360,10 +389,10 @@
   content: '';
   -webkit-appearance: none;
   background-color: transparent;
-  border: 3px solid #000000;
+  border: 4px solid #000000;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
           box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
-  padding: 10px;
+  padding: 8px;
   display: inline-block;
   position: relative;
   vertical-align: middle;
@@ -376,13 +405,13 @@
   display: block;
   position: absolute;
   top: 7px;
-  left: 9px;
-  width: 5px;
-  height: 12px;
-  border: solid #000000;
-  border-width: 0 3px 4px 0;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  left: 6px;
+  width: 6px;
+  background: #e69900;
+  height: 6px;
+  border: solid #e69900;
+  -webkit-transform: none;
+          transform: none;
 }
 
 #content .question1-page {
@@ -492,11 +521,11 @@
 }
 
 #content .question-answer1-page .flex-right {
-  border-right: 2px solid #c0c0c0;
+  border-right: 2px solid #e1dede;
 }
 
 #content .question-answer1-page .flex-left {
-  border-right: 2px solid #c0c0c0;
+  border-right: 2px solid #e1dede;
 }
 
 #content .question-answer1-page .h-para {
@@ -587,11 +616,11 @@
 }
 
 #content .write-treatise-page .flex-right {
-  border-right: 2px solid #c0c0c0;
+  border-right: 2px solid #e1dede;
 }
 
 #content .write-treatise-page .flex-left {
-  border-right: 2px solid #c0c0c0;
+  border-right: 2px solid #e1dede;
 }
 
 #content .write-treatise-page .h-para {
@@ -682,11 +711,11 @@
 }
 
 #content .write-note-page .flex-right {
-  border-right: 2px solid #c0c0c0;
+  border-right: 2px solid #e1dede;
 }
 
 #content .write-note-page .flex-left {
-  border-right: 2px solid #c0c0c0;
+  border-right: 2px solid #e1dede;
 }
 
 #content .write-note-page .h-para {
@@ -743,7 +772,7 @@
 }
 
 #content .answer1-page {
-  padding-top: 3rem;
+  padding-top: 1rem;
   font-family: "Quicksand", sans-serif;
 }
 
@@ -1449,7 +1478,7 @@
 }
 
 #content .answer1-page {
-  padding-top: 3rem;
+  padding-top: 1rem;
   font-family: "Quicksand", sans-serif;
 }
 
@@ -1476,6 +1505,7 @@
   font-family: "Quicksand", sans-serif;
   padding: 5px 20px;
   border-radius: 20px;
+  width: 170px;
 }
 
 #content .answer1-page .btnRectangle-fixed {
@@ -1488,7 +1518,7 @@
 }
 
 #content .answer2-page {
-  padding-top: 3rem;
+  padding-top: 1rem;
   font-family: "Quicksand", sans-serif;
 }
 
@@ -1515,6 +1545,7 @@
   font-family: "Quicksand", sans-serif;
   padding: 5px 20px;
   border-radius: 20px;
+  width: 150px;
 }
 
 #content .answer2-page .btnRectangle-fixed {
@@ -1691,7 +1722,7 @@
 }
 
 .full-page-content .login-page {
-  width: 35%;
+  width: 45%;
   left: 50%;
   position: absolute;
   top: 50%;
@@ -1837,7 +1868,7 @@
 }
 
 .full-page-content .search-page .searchForm .video-img {
-  height: 350px;
+  height: 320px;
 }
 
 .full-page-content .search-page .back::before {
@@ -1922,11 +1953,11 @@
 }
 
 .full-page-content .logout-view-question-page .flex-right {
-  border-right: 2px solid #c0c0c0;
+  border-right: 2px solid #e1dede;
 }
 
 .full-page-content .logout-view-question-page .flex-left {
-  border-right: 2px solid #c0c0c0;
+  border-right: 2px solid #e1dede;
 }
 
 .full-page-content .logout-view-question-page .h-para {
@@ -2045,11 +2076,11 @@
 }
 
 .full-page-content .logout-view-treatise-page .flex-right {
-  border-right: 2px solid #c0c0c0;
+  border-right: 2px solid #e1dede;
 }
 
 .full-page-content .logout-view-treatise-page .flex-left {
-  border-right: 2px solid #c0c0c0;
+  border-right: 2px solid #e1dede;
 }
 
 .full-page-content .logout-view-treatise-page .h-para {
@@ -2168,11 +2199,11 @@
 }
 
 .full-page-content .logout-view-nested-q-page .flex-right {
-  border-right: 2px solid #c0c0c0;
+  border-right: 2px solid #e1dede;
 }
 
 .full-page-content .logout-view-nested-q-page .flex-left {
-  border-right: 2px solid #c0c0c0;
+  border-right: 2px solid #e1dede;
 }
 
 .full-page-content .logout-view-nested-q-page .h-para {
@@ -2291,11 +2322,11 @@
 }
 
 .full-page-content .logout-view-nested-t-page .flex-right {
-  border-right: 2px solid #c0c0c0;
+  border-right: 2px solid #e1dede;
 }
 
 .full-page-content .logout-view-nested-t-page .flex-left {
-  border-right: 2px solid #c0c0c0;
+  border-right: 2px solid #e1dede;
 }
 
 .full-page-content .logout-view-nested-t-page .h-para {
@@ -2405,7 +2436,7 @@
 }
 
 .full-page-content .register-page {
-  width: 45%;
+  width: 60%;
   left: 50%;
   position: absolute;
   top: 50%;

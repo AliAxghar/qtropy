@@ -16,18 +16,24 @@
             <div class="container-fluid d-flex justify-content-between header">
                 <div><img src="assets/images/logo.svg " alt=""></div>
                 <div class="d-flex f-column justify-content-center">
-                    <a href="#" id="user-profile">
-                        <div class="d-flex">
-                            <div class="flex-1 align-items-center pointer"><img class="user-p" src="assets/images/user-p.png" alt="user-profile"></div>
-                            <div class="flex-5 align-items-center ml-1 pointer"><p>Admin Jack</p></div>
+                    <a href="#" id="user-profile" data-target="account-page" onclick="showPage(event)">
+                        <div class="d-flex mt5px">
+                            <div class="flex-1 align-items-center pointer"><img class="user-p" src="assets/images/image-user1.png" alt="user-profile"></div>
+                            <div class="flex-5 align-items-center ml-1 pointer mt5px"><p>Admin Jack</p></div>
                         </div>
                     </a>
                     <a href="index.html" id="logout-user" onclick="logout()">
                         <div class="d-flex mt5px">
-                            <div class="flex-1 align-items-center pointer"><img class="logout-img" src="assets/images/logout.svg" alt="user-profile"></div>
+                            <div class="flex-1 align-items-center pointer"><img class="logout-img" src="assets/images/logout.png" alt="logout"></div>
                             <div class="flex-5 align-items-center ml-1 pointer"><p>Logout</p></div>
                         </div>
                     </a>
+                    <!-- <a href="index.html" id="logout-user" onclick="logout()">
+                        <div class="d-flex mt5px align-items-center">
+                            <div class="flex-1 align-items-center pointer"><img class="logout-img" src="assets/images/logout.svg" alt="user-logout"></div>
+                            <div class="flex-5 align-items-center ml-1 pointer"><p>Logout</p></div>
+                        </div>
+                    </a> -->
                 </div>
             </div>
         </header>
@@ -38,12 +44,6 @@
                     <!-- start sidebar -->
                     <div id="sidebar" class="border-right ">
                         <ul class="d-flex">
-                            <li data-target="all-pages" onclick="showPage(event)">
-                                <a href="#">
-                                    <img src="assets/images/notification-icon.svg" alt="">
-                                    <span>Remaining pages</span>
-                                </a>
-                            </li>
                             <li data-target="home-page" id="home" onclick="showPage(event)">
                                 <a href="#">
                                     <img src="assets/images/home-icon.svg" alt="">
@@ -81,61 +81,12 @@
                                     <span>Contact Us</span>
                                 </a>
                             </li>
-                            <li data-target="message-page" onclick="showPage(event)">
+                            <li data-target="all-pages" onclick="showPage(event)">
                                 <a href="#">
                                     <img src="assets/images/notification-icon.svg" alt="">
-                                    <span>Message</span>
+                                    <span>Remaining pages</span>
                                 </a>
                             </li>
-                            <li data-target="message-reply-click" onclick="showPage(event)">
-                                <a href="#">
-                                    <img src="assets/images/notification-icon.svg" alt="">
-                                    <span>Message Reply</span>
-                                </a>
-                            </li>
-                            <li data-target="user-info-page" onclick="showPage(event)">
-                                <a href="#">
-                                    <img src="assets/images/setting-icon.svg" alt="">
-                                    <span>User Information</span>
-                                </a>
-                            </li>
-                            <li data-target="answer1-page" onclick="showPage(event)">
-                                <a href="#">
-                                    <img src="assets/images/notification-icon.svg" alt="">
-                                    <span>Answer 1</span>
-                                </a>
-                            </li>
-                            <li data-target="answer2-page" onclick="showPage(event)">
-                                <a href="#">
-                                    <img src="assets/images/notification-icon.svg" alt="">
-                                    <span>Answer 2</span>
-                                </a>
-                            </li>
-                            <li data-target="question1-page" onclick="showPage(event)">
-                                <a href="#">
-                                    <img src="assets/images/notification-icon.svg" alt="">
-                                    <span>Question 1</span>
-                                </a>
-                            </li>
-                            <li data-target="treatise-page" onclick="showPage(event)">
-                                <a href="#">
-                                    <img src="assets/images/notification-icon.svg" alt="">
-                                    <span>Treatise</span>
-                                </a>
-                            </li>
-                            <li data-target="note1-page" onclick="showPage(event)">
-                                <a href="#">
-                                    <img src="assets/images/notification-icon.svg" alt="">
-                                    <span>Note 1</span>
-                                </a>
-                            </li>
-                            <li data-target="note-next-page" onclick="showPage(event)">
-                                <a href="#">
-                                    <img src="assets/images/notification-icon.svg" alt="">
-                                    <span>Note Next Point</span>
-                                </a>
-                            </li>
-                            
                         </ul>
                     </div>
                     <!-- start sidebar -->
@@ -156,21 +107,24 @@
                             <h1 class="text-center">Modals</h1>
                             <div class="d-flex justify-content-center align-items-center f-column">
                                 <div class="mt-3"><button  class="open-modal mr-2" data-open="verify-email">Verify Email Modal</button> <button  class="open-modal mr-2" data-open="verified-email">Verified Email Modal</button><button  class="open-modal mr-2" data-open="timeout">Timed out modal</button><button  class="open-modal mr-2" data-open="reset-link">Reset-link modal</button>
+                                </div>
+                                <div class="mt-2">
                                     <button  class="open-modal mr-2" data-open="expired-password-link">Expired Password Link Modal</button><button  class="open-modal mr-2" data-open="success-password-changed">Success Password Changed Modal</button><button  class="open-modal mr-2" data-open="text-properties-modal">Text Properties Modal</button>
                                 </div>
                                 <h1 class="text-center mt-2">Pages</h1>
                                 <div class="mt-2"><a href="search.html"><button  class="mr-3 open-modal" >Search Page</button></a> <a href="register.html"><button  class="mr-3 open-modal" >Register Page</button></a><a href="forgot-password.html"><button  class="mr-3 open-modal" >Forgot Password Page</button></a><a href="change-password.html"><button  class="mr-3 open-modal" >Change Password Page</button></a><button data-target="draft-qt1-page" class="mr-3 open-modal" onclick="showPage(event)">Draft Qt1 Page</button></div>
                                 <div class="mt-2"><button data-target="question-answer1-page" class="mr-3 open-modal" onclick="showPage(event)">Question Answer1 Page</button><button data-target="ask-question-page" class="mr-3 open-modal" onclick="showPage(event)">Ask Question Page</button><button data-target="write-treatise-page" class="mr-3 open-modal" onclick="showPage(event)">Write Treatise Page</button> <button data-target="write-note-page" class="mr-3 open-modal" onclick="showPage(event)">Write note Page</button></div>
-                                <div class="mt-2"><button data-target="draft-qt-click-page" class="mr-3 open-modal" onclick="showPage(event)">Draft Qt Click Page</button><button data-target="qt-next1-page" class="mr-3 open-modal" onclick="showPage(event)">Qt Next1 Page</button><button data-target="qt-next2-page" class="mr-3 open-modal" onclick="showPage(event)">Qt Next2 Page</button><button data-target="draft-note-click-page" class="mr-3 open-modal" onclick="showPage(event)">Draft Note Click Page</button></div>
+                                <div class="mt-2"><button data-target="draft-qt-click-page" class="mr-3 open-modal" onclick="showPage(event)">Draft Qt Click Page</button><button data-target="qt-next1-page" class="mr-3 open-modal" onclick="showPage(event)">Qt Next1 Page</button><button data-target="qt-next2-page" class="mr-3 open-modal" onclick="showPage(event)">Qt Next2 Page</button><button data-target="draft-note-click-page" class="mr-3 open-modal" onclick="showPage(event)">Draft Note Click Page</button><button data-target="note-next-page" onclick="showPage(event)" class="mr-3 open-modal">Note Next Click Page</button></div>
                                 <div class="mt-2"><a href="logout-view-page-question.html"><button  class="mr-3 open-modal" >Logout Content View Question Page</button></a><a href="logout-view-page-treatise.html"><button  class="mr-3 open-modal" >Logout Content View Treatise Page</button></a><a href="logout-view-nested-question.html"><button  class="mr-3 open-modal" >Logout Content View Nested Question Page</button></a></div>
-                                <div class="mt-2"><a href="logout-view-nested-treatise.html"><button  class="mr-3 open-modal" >Logout Content View Nested Treatise Page</button></a></div>
+                                <div class="mt-2"><a href="logout-view-nested-treatise.html"><button  class="mr-3 open-modal" >Logout Content View Nested Treatise Page</button></a><button class="mr-3 open-modal" data-target="message-page" onclick="showPage(event)">Message Page</button> <button class="mr-3 open-modal" data-target="message-reply-click" onclick="showPage(event)">Message Reply Page</button><button class="mr-3 open-modal" data-target="user-info-page" onclick="showPage(event)">User Information Page</button></div>
+                                <div class="mt-2"><button class="mr-3 open-modal" data-target="answer1-page" onclick="showPage(event)">Answer1 Page</button> <button class="mr-3 open-modal" data-target="answer2-page" onclick="showPage(event)">Answer2 Page</button><button class="mr-3 open-modal" data-target="question1-page" onclick="showPage(event)">Question1 Page</button><button class="mr-3 open-modal" data-target="treatise-page" onclick="showPage(event)">Treatise Page</button><button class="mr-3 open-modal" data-target="note1-page" onclick="showPage(event)">Note1 Page</button></div>
+
                             </div>
                         </div>
                         <!-- start Account Page -->
                         <div id="account-page" class="account-page">
                             <div class="w100 d-flex">
-                                <div class="flex-1"></div>
-                                <div class="d-flex f-column flex-10">
+                                <div class="d-flex f-column flex-12">
                                     <div class="d-flex f-row-wrap"><h1 class="pl-3">Account Settings</h1><button href="#" class="open-modal ml-3" data-open="modal1">Field Visibility</button></div>
                                     <div class="mt-2">
                                         <div class="profile d-flex f-row-wrap justify-content-center">
@@ -183,14 +137,14 @@
                                                     <input type="file"  id="upload-file" class="upload-account-image">
                                                 </div>
                                             </div>
-                                            <div class="flex-grow-1">
+                                            <div class="flex-grow-2">
                                                 <div class="d-flex f-column">
                                                     <div class="d-flex mt-1">
-                                                        <div class="flex-3 mr-2 pt-05 label">Username</div>
+                                                        <div class="flex-3 pt-05 label">Username</div>
                                                         <div class="flex-6 "><input type="text" class="form-control" placeholder="Jack"></div>
                                                     </div>
                                                     <div class="d-flex mt-1">
-                                                        <div class="flex-3 mr-2 pt-05 label">Email Address</div>
+                                                        <div class="flex-3 pt-05 label">Email Address</div>
                                                         <div class="flex-6 relative input" class="parent">
                                                             <input type="password" class="form-control text" id="email" value="Jack@gmail.com" readonly>
                                                             <span class="eye" id="hide-eye" onclick="hideFunction(this)" >
@@ -205,7 +159,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="d-flex mt-1">
-                                                        <div class="flex-3 mr-2 pt-05 label">Password</div>
+                                                        <div class="flex-3 pt-05 label">Password</div>
                                                         <div class="flex-6 relative input" class="parent">
                                                             <input type="password" class="form-control text" id="password" value="Password" readonly>
                                                             <span class="eye" onclick="editFunction(this)">
@@ -214,7 +168,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="d-flex mt-1">
-                                                        <div class="flex-3 mr-2 label">Notification Alerts</div>
+                                                        <div class="flex-3 label">Notification Alerts</div>
                                                         <div class="flex-6 d-flex f-column">
                                                             <div class="form-group">
                                                                 <input type="checkbox" id="All">
@@ -254,7 +208,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="d-flex mt-1">
-                                                        <div class="flex-3 mr-2 pt-05 label">Profile Description</div>
+                                                        <div class="flex-3 pt-05 label">Profile Description</div>
                                                         <div class="flex-6 relative input max-w100">
                                                             <textarea type="email" class="form-control text textarea w100" rows="4" cols="" ></textarea>
                                                             <span class="edit-des" onclick="editFunction(this)">
@@ -265,7 +219,7 @@
                                                     <div class="text-center mt-3"><button type="button" class="btn-rectangle">Save Changes</button></div>
                                                 </div>
                                             </div>
-                                            <div class="flex-grow-2">
+                                            <div class="flex-grow-1">
                                                 <div class="d-flex f-column pt-1 align-items-center account-btns">
                                                     <div class="">
                                                         <button type="button" class="btn-square ">Merge Account</button>
@@ -285,10 +239,10 @@
                             <div class="w100 text-center">
                                 <h1>Notifications</h1>
                             </div>
-                            <div class="profile d-flex f-row-wrap justify-content-between align-items-center border-bottom mt-2">
-                                <div class="flex-1"></div>
-                                <div class="flex-10 d-flex f-row-wrap">
-                                    <div class="form-group">
+                            <div class="profile d-flex f-row-wrap justify-content-center align-items-center border-bottom p-1 mt-1">
+                                <!-- <div class="flex-1"></div> -->
+                                <div class="flex-10 d-flex f-row-wrap justify-content-center align-items-center">
+                                    <div class="form-group ">
                                         <input type="checkbox" id="All1" checked>
                                         <label for="All1" class="label-check"></label>
                                         <span class="label-check">All</span>
@@ -324,10 +278,8 @@
                                         <span class="label-check">Visibility Request</span>
                                     </div>
                                 </div>
-                                <div class="flex-1"></div>
                             </div>
-                            <div class="d-flex border-bottom pt-1 pb-1">
-                                <div class="flex-1"></div>
+                            <div class="d-flex border-bottom p-1">
                                 <div class="flex-19 d-flex wrap">
                                     <div class="flex-grow-1 d-flex f-column">
                                         <div class="f20 f-w-600">Message: Question Asked by abc</div>
@@ -342,10 +294,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="flex-1"></div>
                             </div>
-                            <div class="d-flex border-bottom pt-1 pb-1">
-                                <div class="flex-1"></div>
+                            <div class="d-flex border-bottom p-1">
                                 <div class="flex-19 d-flex wrap">
                                     <div class="flex-grow-1 d-flex f-column">
                                         <div class="f20 f-w-600">Message: Question Asked by abc</div>
@@ -360,10 +310,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="flex-1"></div>
                             </div>
-                            <div class="d-flex border-bottom pt-1 pb-1">
-                                <div class="flex-1"></div>
+                            <div class="d-flex border-bottom p-1">
                                 <div class="flex-19 d-flex wrap">
                                     <div class="flex-grow-1 d-flex f-column">
                                         <div class="f20 f-w-600">Message: Question Asked by abc</div>
@@ -378,10 +326,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="flex-1"></div>
                             </div>
-                            <div class="d-flex border-bottom pt-1 pb-1">
-                                <div class="flex-1"></div>
+                            <div class="d-flex border-bottom p-1">
                                 <div class="flex-19 d-flex wrap">
                                     <div class="flex-grow-1 d-flex f-column">
                                         <div class="f20 f-w-600">Message: Question Asked by abc</div>
@@ -396,10 +342,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="flex-1"></div>
                             </div>
-                            <div class="d-flex border-bottom pt-1 pb-1">
-                                <div class="flex-1"></div>
+                            <div class="d-flex border-bottom p-1">
                                 <div class="flex-19 d-flex wrap">
                                     <div class="flex-grow-1 d-flex f-column">
                                         <div class="f20 f-w-600">Message: Question Asked by abc</div>
@@ -414,10 +358,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="flex-1"></div>
                             </div>
-                            <div class="d-flex border-bottom pt-1 pb-1">
-                                <div class="flex-1"></div>
+                            <div class="d-flex border-bottom p-1">
                                 <div class="flex-19 d-flex wrap">
                                     <div class="flex-grow-1 d-flex f-column">
                                         <div class="f20 f-w-600">Message: Question Asked by abc</div>
@@ -432,10 +374,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="flex-1"></div>
                             </div>
-                            <div class="d-flex border-bottom pt-1 pb-1">
-                                <div class="flex-1"></div>
+                            <div class="d-flex border-bottom p-1">
                                 <div class="flex-19 d-flex wrap">
                                     <div class="flex-grow-1 d-flex f-column">
                                         <div class="f20 f-w-600">Message: Question Asked by abc</div>
@@ -450,10 +390,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="flex-1"></div>
                             </div>
-                            <div class="d-flex border-bottom pt-1 pb-1">
-                                <div class="flex-1"></div>
+                            <div class="d-flex border-bottom p-1">
                                 <div class="flex-19 d-flex wrap">
                                     <div class="flex-grow-1 d-flex f-column">
                                         <div class="f20 f-w-600">Message: Question Asked by abc</div>
@@ -468,7 +406,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="flex-1"></div>
                             </div>
                         </div>
                         <!-- End Notification Page -->
@@ -477,10 +414,9 @@
                         <!-- start Answer 1 Page -->
                         <div id="answer1-page" class="answer1-page">
                             <div class="d-flex border-bottom pb-1">
-                                <div class="flex-1"></div>
                                 <div class="flex-10">
-                                    <div class="d-flex f-row-wrap description ">
-                                        <div class="flex-grow-1 d-flex f-column mt10px">
+                                    <div class="d-flex f-row-wrap description p-2">
+                                        <div class="flex-grow-1 d-flex f-column">
                                             <h1 class="f-w-600">Question(015569A)</h1>
                                             <p class="f20 f-w-600 text-black mt-1_5">Asked by: <span class="l-color">Jack Nicole</span></p>
                                             <p class="f20 f-w-600 text-black mt5px">Answered by: <span class="l-color">20 Users</span></p>
@@ -491,10 +427,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="flex-1"></div>
                             </div>
-                            <div class="d-flex border-bottom pt-1 pb-1">
-                                <div class="flex-1"></div>
+                            <div class="d-flex border-bottom p-1">
                                 <div class="flex-19 d-flex wrap">
                                     <div class="flex-grow-1 d-flex f-column">
                                         <div class="f20 f-w-500">Answer by: <span class="l-color"> User 1</span></div>
@@ -503,10 +437,8 @@
                                         <button class="mr-1 btnRectangle">Track</button><button class="btnRectangle-fix">Save</button>
                                     </div>
                                 </div>
-                                <div class="flex-1"></div>
                             </div>
-                            <div class="d-flex border-bottom pt-1 pb-1">
-                                <div class="flex-1"></div>
+                            <div class="d-flex border-bottom p-1">
                                 <div class="flex-19 d-flex wrap">
                                     <div class="flex-grow-1 d-flex f-column">
                                         <div class="f20 f-w-500">Answer by: <span class="l-color"> User 2</span></div>
@@ -515,10 +447,8 @@
                                         <button class="mr-1 btnRectangle">Track</button><button class="btnRectangle-fix">Unsave</button>
                                     </div>
                                 </div>
-                                <div class="flex-1"></div>
                             </div>
-                            <div class="d-flex border-bottom pt-1 pb-1">
-                                <div class="flex-1"></div>
+                            <div class="d-flex border-bottom p-1">
                                 <div class="flex-19 d-flex wrap">
                                     <div class="flex-grow-1 d-flex f-column">
                                         <div class="f20 f-w-500">Answer by: <span class="l-color"> User 3</span></div>
@@ -527,10 +457,8 @@
                                         <button class="mr-1 btnRectangle">Delete Answer</button><button class="btnRectangle-fix">Save</button>
                                     </div>
                                 </div>
-                                <div class="flex-1"></div>
                             </div>
-                            <div class="d-flex border-bottom pt-1 pb-1">
-                                <div class="flex-1"></div>
+                            <div class="d-flex border-bottom p-1">
                                 <div class="flex-19 d-flex wrap">
                                     <div class="flex-grow-1 d-flex f-column">
                                         <div class="f20 f-w-500">Answer by: <span class="l-color"> User 4</span></div>
@@ -539,10 +467,8 @@
                                         <button class="mr-1 btnRectangle">Track</button><button class="btnRectangle-fix">Save</button>
                                     </div>
                                 </div>
-                                <div class="flex-1"></div>
                             </div>
-                            <div class="d-flex border-bottom pt-1 pb-1">
-                                <div class="flex-1"></div>
+                            <div class="d-flex border-bottom p-1">
                                 <div class="flex-19 d-flex wrap">
                                     <div class="flex-grow-1 d-flex f-column">
                                         <div class="f20 f-w-500">Answer by: <span class="l-color"> User 5</span></div>
@@ -551,10 +477,8 @@
                                         <button class="mr-1 btnRectangle">Track</button><button class="btnRectangle-fix">Save</button>
                                     </div>
                                 </div>
-                                <div class="flex-1"></div>
                             </div>
-                            <div class="d-flex border-bottom pt-1 pb-1">
-                                <div class="flex-1"></div>
+                            <div class="d-flex border-bottom p-1">
                                 <div class="flex-19 d-flex wrap">
                                     <div class="flex-grow-1 d-flex f-column">
                                         <div class="f20 f-w-500">Answer by: <span class="l-color"> User 6</span></div>
@@ -563,10 +487,8 @@
                                         <button class="mr-1 btnRectangle">Track</button><button class="btnRectangle-fix">Unsave</button>
                                     </div>
                                 </div>
-                                <div class="flex-1"></div>
                             </div>
-                            <div class="d-flex border-bottom pt-1 pb-1">
-                                <div class="flex-1"></div>
+                            <div class="d-flex border-bottom p-1">
                                 <div class="flex-19 d-flex wrap">
                                     <div class="flex-grow-1 d-flex f-column">
                                         <div class="f20 f-w-500">Answer by: <span class="l-color"> User 7</span></div>
@@ -575,10 +497,8 @@
                                         <button class="mr-1 btnRectangle">Delete Answer</button><button class="btnRectangle-fix">Save</button>
                                     </div>
                                 </div>
-                                <div class="flex-1"></div>
                             </div>
-                            <div class="d-flex border-bottom pt-1 pb-1">
-                                <div class="flex-1"></div>
+                            <div class="d-flex border-bottom p-1">
                                 <div class="flex-19 d-flex wrap">
                                     <div class="flex-grow-1 d-flex f-column">
                                         <div class="f20 f-w-500">Answer by: <span class="l-color"> User 8</span></div>
@@ -587,10 +507,8 @@
                                         <button class="mr-1 btnRectangle">Track</button><button class="btnRectangle-fix">Save</button>
                                     </div>
                                 </div>
-                                <div class="flex-1"></div>
                             </div>
-                            <div class="d-flex border-bottom pt-1 pb-1">
-                                <div class="flex-1"></div>
+                            <div class="d-flex border-bottom p-1">
                                 <div class="flex-19 d-flex wrap">
                                     <div class="flex-grow-1 d-flex f-column">
                                         <div class="f20 f-w-500">Answer by: <span class="l-color"> User 9</span></div>
@@ -599,10 +517,8 @@
                                         <button class="mr-1 btnRectangle">Track</button><button class="btnRectangle-fix">Unsave</button>
                                     </div>
                                 </div>
-                                <div class="flex-1"></div>
                             </div>
-                            <div class="d-flex border-bottom pt-1 pb-1">
-                                <div class="flex-1"></div>
+                            <div class="d-flex border-bottom p-1">
                                 <div class="flex-19 d-flex wrap">
                                     <div class="flex-grow-1 d-flex f-column">
                                         <div class="f20 f-w-500">Answer by: <span class="l-color"> User 10</span></div>
@@ -611,7 +527,6 @@
                                         <button class="mr-1 btnRectangle">Delete Answer</button><button class="btnRectangle-fix">Save</button>
                                     </div>
                                 </div>
-                                <div class="flex-1"></div>
                             </div>
                             
                             
@@ -621,10 +536,9 @@
                         <!-- start Answer2 Page -->
                         <div id="answer2-page" class="answer2-page">
                             <div class="d-flex border-bottom pb-1">
-                                <div class="flex-1"></div>
                                 <div class="flex-10">
-                                    <div class="d-flex f-row-wrap description ">
-                                        <div class="flex-grow-1 d-flex f-column mt10px">
+                                    <div class="d-flex f-row-wrap description p-2">
+                                        <div class="flex-grow-1 d-flex f-column ">
                                             <h1 class="f-w-600">Question(015569A)</h1>
                                             <p class="f20 f-w-600 text-black mt-1_5">Asked by: <span class="l-color">Jack Nicole</span></p>
                                             <p class="f20 f-w-600 text-black mt5px">Answered by: <span class="l-color">20 Users</span></p>
@@ -635,10 +549,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="flex-1"></div>
                             </div>
-                            <div class="d-flex border-bottom pt-1 pb-1">
-                                <div class="flex-1"></div>
+                            <div class="d-flex border-bottom p-1">
+                                
                                 <div class="flex-19 d-flex wrap">
                                     <div class="flex-grow-1 d-flex f-column">
                                         <div class="f20 f-w-500">Answer by: <span class="l-color"> User 11</span></div>
@@ -647,10 +560,10 @@
                                         <button class="mr-1 btnRectangle">Track</button><button class="btnRectangle-fix">Save</button>
                                     </div>
                                 </div>
-                                <div class="flex-1"></div>
+                                
                             </div>
-                            <div class="d-flex border-bottom pt-1 pb-1">
-                                <div class="flex-1"></div>
+                            <div class="d-flex border-bottom p-1">
+                                
                                 <div class="flex-19 d-flex wrap">
                                     <div class="flex-grow-1 d-flex f-column">
                                         <div class="f20 f-w-500">Answer by: <span class="l-color"> User 12</span></div>
@@ -659,10 +572,10 @@
                                         <button class="mr-1 btnRectangle">Track</button><button class="btnRectangle-fix">Unsave</button>
                                     </div>
                                 </div>
-                                <div class="flex-1"></div>
+                                
                             </div>
-                            <div class="d-flex border-bottom pt-1 pb-1">
-                                <div class="flex-1"></div>
+                            <div class="d-flex border-bottom p-1">
+                                
                                 <div class="flex-19 d-flex wrap">
                                     <div class="flex-grow-1 d-flex f-column">
                                         <div class="f20 f-w-500">Answer by: <span class="l-color"> User 13</span></div>
@@ -671,10 +584,10 @@
                                         <button class="mr-1 btnRectangle">Edit Answer</button><button class="btnRectangle-fix">Save</button>
                                     </div>
                                 </div>
-                                <div class="flex-1"></div>
+                                
                             </div>
-                            <div class="d-flex border-bottom pt-1 pb-1">
-                                <div class="flex-1"></div>
+                            <div class="d-flex border-bottom p-1">
+                                
                                 <div class="flex-19 d-flex wrap">
                                     <div class="flex-grow-1 d-flex f-column">
                                         <div class="f20 f-w-500">Answer by: <span class="l-color"> User 14</span></div>
@@ -683,10 +596,10 @@
                                         <button class="mr-1 btnRectangle">Track</button><button class="btnRectangle-fix">Save</button>
                                     </div>
                                 </div>
-                                <div class="flex-1"></div>
+                                
                             </div>
-                            <div class="d-flex border-bottom pt-1 pb-1">
-                                <div class="flex-1"></div>
+                            <div class="d-flex border-bottom p-1">
+                                
                                 <div class="flex-19 d-flex wrap">
                                     <div class="flex-grow-1 d-flex f-column">
                                         <div class="f20 f-w-500">Answer by: <span class="l-color"> User 15</span></div>
@@ -695,10 +608,10 @@
                                         <button class="mr-1 btnRectangle">Track</button><button class="btnRectangle-fix">Save</button>
                                     </div>
                                 </div>
-                                <div class="flex-1"></div>
+                                
                             </div>
-                            <div class="d-flex border-bottom pt-1 pb-1">
-                                <div class="flex-1"></div>
+                            <div class="d-flex border-bottom p-1">
+                                
                                 <div class="flex-19 d-flex wrap">
                                     <div class="flex-grow-1 d-flex f-column">
                                         <div class="f20 f-w-500">Answer by: <span class="l-color"> User 16</span></div>
@@ -707,10 +620,10 @@
                                         <button class="mr-1 btnRectangle">Track</button><button class="btnRectangle-fix">Unsave</button>
                                     </div>
                                 </div>
-                                <div class="flex-1"></div>
+                                
                             </div>
-                            <div class="d-flex border-bottom pt-1 pb-1">
-                                <div class="flex-1"></div>
+                            <div class="d-flex border-bottom p-1">
+                                
                                 <div class="flex-19 d-flex wrap">
                                     <div class="flex-grow-1 d-flex f-column">
                                         <div class="f20 f-w-500">Answer by: <span class="l-color"> User 17</span></div>
@@ -719,10 +632,10 @@
                                         <button class="mr-1 btnRectangle">Edit Answer</button><button class="btnRectangle-fix">Save</button>
                                     </div>
                                 </div>
-                                <div class="flex-1"></div>
+                                
                             </div>
-                            <div class="d-flex border-bottom pt-1 pb-1">
-                                <div class="flex-1"></div>
+                            <div class="d-flex border-bottom p-1">
+                                
                                 <div class="flex-19 d-flex wrap">
                                     <div class="flex-grow-1 d-flex f-column">
                                         <div class="f20 f-w-500">Answer by: <span class="l-color"> User 18</span></div>
@@ -731,10 +644,10 @@
                                         <button class="mr-1 btnRectangle">Track</button><button class="btnRectangle-fix">Save</button>
                                     </div>
                                 </div>
-                                <div class="flex-1"></div>
+                                
                             </div>
-                            <div class="d-flex border-bottom pt-1 pb-1">
-                                <div class="flex-1"></div>
+                            <div class="d-flex border-bottom p-1">
+                                
                                 <div class="flex-19 d-flex wrap">
                                     <div class="flex-grow-1 d-flex f-column">
                                         <div class="f20 f-w-500">Answer by: <span class="l-color"> User 19</span></div>
@@ -743,10 +656,10 @@
                                         <button class="mr-1 btnRectangle">Track</button><button class="btnRectangle-fix">Unsave</button>
                                     </div>
                                 </div>
-                                <div class="flex-1"></div>
+                                
                             </div>
-                            <div class="d-flex border-bottom pt-1 pb-1">
-                                <div class="flex-1"></div>
+                            <div class="d-flex border-bottom p-1">
+                                
                                 <div class="flex-19 d-flex wrap">
                                     <div class="flex-grow-1 d-flex f-column">
                                         <div class="f20 f-w-500">Answer by: <span class="l-color"> User 20</span></div>
@@ -755,7 +668,7 @@
                                         <button class="mr-1 btnRectangle">Edit Answer</button><button class="btnRectangle-fix">Save</button>
                                     </div>
                                 </div>
-                                <div class="flex-1"></div>
+                                
                             </div>
                             
                             
@@ -1935,12 +1848,12 @@
                         <!-- Start Follower and Following Page -->
                         <div id="follower-page" class="follower-page w100">
                             <div class="d-flex f-row-wrap justify-content-between align-items-center">
-                                <div class="flex-3"></div>
-                                <div class="flex-10 d-flex">
+                                <div class="flex-grow-1"></div>
+                                <div class="flex-grow-1 d-flex">
                                     <div type="button" class="w100 text-center f-btn f-left selected Nselected d-flex justify-content-center align-items-center pointer" id="f-left" onclick="followPage(event,'follow_ing')">Following</div>
                                     <div type="button" class="w100 text-center f-btn f-right Nselected d-flex justify-content-center align-items-center pointer" id="f-right" onclick="followPage(event,'follow_er')">Followers</div>
                                 </div>
-                                <div class="flex-3"></div>
+                                <div class="flex-grow-1"></div>
                             </div>
                             <div class="d-flex f-row-wrap justify-content-between align-items-center mt-3">
                                 <div class="flex-1"></div>
@@ -2244,8 +2157,7 @@
                             <div class="w100 text-center">
                                 <h1>User Information</h1>
                             </div>
-                            <div class="mt-4 d-flex justify-content-center align-items-center">
-                                <div class="flex-1"></div>
+                            <div class=" d-flex justify-content-center align-items-center p-2">
                                 <div class="flex-10 profile d-flex f-row-wrap justify-content-center">
                                     <div class="ml-1 align-items-start">
                                         <div class="relative">
@@ -2259,11 +2171,11 @@
                                     <div class=" flex-grow-2">
                                         <div class="d-flex f-column mt10px">
                                             <div class="d-flex mt-1_5">
-                                                <div class="flex-3 mr-2 pt-05 label">Username</div>
+                                                <div class="flex-4 pt-05 label">Username</div>
                                                 <div class="flex-8 "><input type="text" class="form-control" placeholder="Jack"></div>
                                             </div>
                                             <div class="d-flex mt-1_5">
-                                                <div class="flex-3 mr-2 pt-05 label">Email Address</div>
+                                                <div class="flex-4 pt-05 label">Email Address</div>
                                                 <div class="flex-8 relative input" class="parent">
                                                     <input type="password" class="form-control text" id="email" value="Jack@gmail.com" readonly>
                                                     <span class="eye" id="hide-eye1" onclick="hideFunction(this)" >
@@ -2279,7 +2191,7 @@
                                             </div>
                                             <div class="d-flex mt-1_5">
                                                 <div class="flex-6 relative input max-w100">
-                                                    <textarea type="email" class="form-control text textarea w100 placeholder-center" rows="8" cols="" placeholder="User’s self description" readonly></textarea>
+                                                    <textarea type="email" class="form-control text textarea w100 " rows="8" cols="" placeholder="User’s self description" readonly></textarea>
                                                     <span class="edit-des" onclick="editFunction(this)">
                                                         <img src="assets/images/edit.svg" alt="">
                                                     </span>
@@ -2287,20 +2199,20 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="flex-1"></div>
                                     <div class="flex-grow-1 d-flex f-column align-items-center pt-2">
                                         <div><button class="btnRectangle">Request Visibility</button></div>
                                     </div>
                                 </div>
-                                <div class="flex-1"></div>
                             </div>
                             <div class="mt-4 d-flex justify-content-center align-items-center">
-                                <div class="flex-2"></div>
-                                <div class="flex-10 d-flex  justify-content-center align-items-center">
+                                <div class="flex-1"></div>
+                                <div class="flex-10 d-flex  justify-content-around align-items-center">
                                     <div class="flex-1 mt-1"><button class="btnRectangle-fixed">Send Follow Request</button></div>
                                     <div class="flex-1 mt-1"><button class="btnRectangle-fixed">Send Message</button></div>
                                     <div class="flex-1 mt-1"><button class="btnRectangle-fixed">Block</button></div>
                                 </div>
-                                <div class="flex-2"></div>
+                                <div class="flex-1"></div>
                             </div>
                         </div>
                         <!-- User Information Page -->

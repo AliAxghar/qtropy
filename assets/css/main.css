@@ -50,7 +50,7 @@
 #sidebar ul li:hover {
   list-style: none;
   padding: 10px 20px;
-  border: 2px solid #E69900;
+  border: 4px solid #E69900;
 }
 
 .w100 {
@@ -430,14 +430,25 @@ input[type='submit'], img, a {
 
 button {
   cursor: pointer;
+  border-radius: 5px !important;
+}
+
+button:hover {
+  -webkit-box-shadow: 0px 1px 13px 0px #e69900 !important;
+          box-shadow: 0px 1px 13px 0px #e69900 !important;
+}
+
+input[type='submit']:hover {
+  -webkit-box-shadow: 0px 1px 13px 0px #e69900 !important;
+          box-shadow: 0px 1px 13px 0px #e69900 !important;
 }
 
 .border-bottom {
-  border-bottom: 2px solid #c0c0c0;
+  border-bottom: 2px solid #e1dede;
 }
 
 .border-all {
-  border: 2px solid #c0c0c0;
+  border: 2px solid #e1dede;
 }
 
 .form-group {
@@ -1386,11 +1397,12 @@ header .header {
   background: #FFFFFF;
   position: fixed;
   top: 0;
-  border-bottom: 2px solid silver;
+  border-bottom: 2px solid #e1dede;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 0 60px;
+  z-index: 1000;
 }
 
 header .header a {
@@ -1399,18 +1411,18 @@ header .header a {
 }
 
 header .user-p {
-  height: 31px;
-  width: 31px;
+  height: 41px;
+  width: 41px;
 }
 
 header .logout-img {
-  height: 21px;
-  padding-left: 10px;
+  height: 32px;
+  padding-left: 9px;
 }
 
 header p {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 #sidebar {
@@ -1418,7 +1430,7 @@ header p {
   height: 100%;
   background: #ffffff;
   position: fixed;
-  border-right: 2px solid silver;
+  border-right: 2px solid #e1dede;
   overflow: hidden;
 }
 
@@ -1426,7 +1438,7 @@ header p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 40px;
+  margin-top: 20px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1436,7 +1448,7 @@ header p {
 #sidebar ul li {
   list-style: none;
   padding: 10px 20px;
-  border: 2px solid #fff;
+  border: 4px solid #fff;
   margin: 1px 0;
 }
 
@@ -1460,7 +1472,7 @@ header p {
 
 #sidebar ul li a span {
   padding-left: 8px;
-  font-size: 19px;
+  font-size: 18px;
   line-height: 20.48px;
   font-weight: 500;
 }
@@ -1475,7 +1487,7 @@ header p {
 }
 
 #sidebar ul .active {
-  border: 2px solid #E69900;
+  border: 4px solid #E69900;
 }
 
 .modal .form-control {
@@ -1519,7 +1531,7 @@ header p {
   content: '';
   -webkit-appearance: none;
   background-color: transparent;
-  border: 3px solid #000000;
+  border: 4px solid #000000;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
           box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
   padding: 7px;
@@ -1534,14 +1546,14 @@ header p {
   content: '';
   display: block;
   position: absolute;
-  top: 9px;
-  left: 7px;
-  width: 3px;
-  height: 8px;
-  border: solid #000000;
-  border-width: 0 3px 4px 0;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  top: 11px;
+  left: 5px;
+  width: 6px;
+  height: 6px;
+  background: #E69900;
+  border: solid #E69900;
+  -webkit-transform: none;
+          transform: none;
 }
 
 .modal .modal-radio input[type="radio"] {
@@ -1557,7 +1569,7 @@ header p {
   content: '';
   -webkit-appearance: none;
   background-color: transparent;
-  border: 2px solid #353535;
+  border: 4px solid #000000;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
           box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
   padding: 8px;
@@ -1572,12 +1584,12 @@ header p {
 .modal .modal-radio [type="radio"]:checked + label:after,
 .modal .modal-radio [type="radio"]:not(:checked) + label:after {
   content: '';
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   background: #e69900;
   position: absolute;
-  top: 5px;
-  left: 2px;
+  top: 6px;
+  left: 5px;
   border-radius: 100%;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
@@ -1805,10 +1817,10 @@ header p {
   content: '';
   -webkit-appearance: none;
   background-color: transparent;
-  border: 2px solid #353535;
+  border: 4px solid #000000;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
           box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
-  padding: 8px;
+  padding: 7px;
   display: inline-block;
   position: relative;
   vertical-align: middle;
@@ -1820,15 +1832,14 @@ header p {
 .text-properties-modal .modal-radio [type="radio"]:checked + label:after,
 .text-properties-modal .modal-radio [type="radio"]:not(:checked) + label:after {
   content: '';
-  width: 16px;
-  height: 16px;
-  background: #e69900;
-  position: absolute;
-  top: 9px;
-  left: 2px;
-  border-radius: 100%;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  top: 11px;
+  left: 5px;
+  width: 6px;
+  height: 6px;
+  background: #E69900;
+  border: solid #E69900;
+  -webkit-transform: none;
+          transform: none;
 }
 
 .text-properties-modal .modal-radio [type="radio"]:not(:checked) + label:after {
